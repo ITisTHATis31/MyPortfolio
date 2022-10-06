@@ -12,7 +12,15 @@
 </head>
 
 <body>
-    <div class="sidebar">
+    <!-- <div id="menu" >
+        <ul>
+            <li>sgsdgsd</li>
+            <li>dgsdgsdgsdgdgs</li>
+            <li>dgdsdgd</li>
+            <li>dgdsggehehes</li>
+        </ul>
+    </div> -->
+    <div class="sidebar active" id="menu">
         <div class="header">
             <div class="avatar">
                 <img src="avatar.png" alt="">
@@ -23,18 +31,18 @@
                 <img src="more.svg" alt="">
             </div>
         </div>
-        <div class="sidebar-search">
+        <div class="sidebar-search active">
             <div class="sidebar-search-container">
                 <img src="search.svg" alt="">
                 <input type="text" placeholder="search or start new chats">
             </div>
         </div>
         <!-- ................................about myself...................................... -->
-        <div class="sidebar-chat">
+        <div class="sidebar-chat active">
             <div class="chat-avatar">
                 <img src="avatar.png" alt="">
             </div>
-            <button class="botn" id="btn" onclick="sh1()">
+            <button class="botn" id="btn1" onclick="sh1()">
                 <div class="chat-info">
                     <h4>About Myself</h4>
                     <p>last message</p>
@@ -49,11 +57,11 @@
         <!-- ................... PROJECTS ............................................................................-->
 
 
-        <div class="sidebar-chat">
+        <div class="sidebar-chat active">
             <div class="chat-avatar">
                 <img src="avatar.png" alt="">
             </div>
-            <button class="botn" id="btn" onclick="sh2()">
+            <button class="botn" id="btn2" onclick="sh2()">
                 <div class="chat-info">
                     <h4>PROJECTS</h4>
                     <p>last message</p>
@@ -68,11 +76,11 @@
         <!-- .................CERTIFICATES....... .....................................................-->
 
 
-        <div class="sidebar-chat">
+        <div class="sidebar-chat active">
             <div class="chat-avatar">
                 <img src="avatar.png" alt="">
             </div>
-            <button class="botn" id="btn" onclick="sh3()">
+            <button class="botn" id="btn3" onclick="sh3()">
                 <div class="chat-info">
                     <h4>CERTIFICATES</h4>
                     <p>last message</p>
@@ -91,7 +99,7 @@
             <div class="chat-avatar">
                 <img src="avatar.png" alt="">
             </div>
-            <button class="botn" id="btn" onclick="sh4()">
+            <button class="botn" id="btn4" onclick="sh4()">
                 <div class="chat-info">
                     <h4>CONTACTS</h4>
                     <p>last message</p>
@@ -117,13 +125,16 @@
                     <p>online</p>
                 </div>
             </div>
-            <div class="chat-right-header">
+            <div class="chat-left-header">
+                <div id="navhid" class="active">
+                    <img src="menu.png" alt="">
+                </div>
                 <img src="search.svg" alt="">
                 <img src="more.svg" alt="">
             </div>
         </div>
 
-        <div id="message-content1">
+        <div id="message-content1" class="msgbox">
             <p class="chat-message" id="chead">ABOUT ME :<span class="chat-timestamp">11:33</span></p>
             <p class="chat-message sent" id="imgg"><img src="pic.jpg" alt=""> <b><br>
                     Name: S VENKAT RAMAN <br>
@@ -151,28 +162,32 @@
             <p class="chat-message sent">This is a message <span class="chat-timestamp">11:33</span></p>
         </div>
 
-        <div id="message-content2">
+        <div id="message-content2" class="msgbox">
             <p class="chat-message" id="chead">PROJECTS :~<span class="chat-timestamp">11:33</span></p>
             <p class="chat-message sent">This is a message <span class="chat-timestamp">11:33</span></p>
             <p class="chat-message" id="tit">MOVIEW :<span class="chat-timestamp">11:33</span></p>
-            <p class="chat-message sent"><img src="movv.png" alt="" id="cimg"><br><b>It is a responsive movie review(MOVIEW) website <br>where i share my reviews
+            <p class="chat-message sent"><img src="movv.png" alt="" id="cimg"><br><b>It is a responsive movie
+                    review(MOVIEW) website <br>where i share my reviews
                     on moviews i watch.</b> <br><br>
                 <a href="http://venkatraman31.github.io/MOVIEW/">visit</a><span class="chat-timestamp">11:33</span>
             </p>
             <p class="chat-message" id="tit">MY PORTFOLIO <span class="chat-timestamp">11:33</span></p>
-            <p class="chat-message sent"><img src="port.png" alt="" id="cimg"><br><b>The portfolipo which your viewing ri8 now <br>
+            <p class="chat-message sent"><img src="port.png" alt="" id="cimg"><br><b>The portfolipo which your viewing
+                    ri8 now <br>
                     which is jst a reason to learn some thing new with fun</b> <span class="chat-timestamp">11:33</span>
             </p>
             <p class="chat-message" id="tit">MEME SHARE App <span class="chat-timestamp">11:33</span></p>
-            <p class="chat-message sent"><img src="meme.jpg" alt="" id="cimg"><br> It is an basic android meme sharring app.<span class="chat-timestamp">11:33</span></p>
+            <p class="chat-message sent"><img src="meme.jpg" alt="" id="cimg"><br> It is an basic android meme sharring
+                app.<span class="chat-timestamp">11:33</span></p>
             <p class="chat-message" id="tit">COLLEGE KE KISSEY<span class="chat-timestamp">11:33</span></p>
-            <p class="chat-message sent"><img src="ckk.png" alt="" id="cimg"><br> a basic lvl website made for <br> my friends youtube channel <span class="chat-timestamp">11:33</span></p>
+            <p class="chat-message sent"><img src="ckk.png" alt="" id="cimg"><br> a basic lvl website made for <br> my
+                friends youtube channel <span class="chat-timestamp">11:33</span></p>
             <p class="chat-message">This is a message <span class="chat-timestamp">11:33</span></p>
             <p class="chat-message sent">This is a message <span class="chat-timestamp">11:33</span></p>
 
         </div>
 
-        <div id="message-content3">
+        <div id="message-content3" class="msgbox">
             <p class="chat-message" id="chead">CERTIFICATES<span class="chat-timestamp">11:33</span></p>
             <p class="chat-message sent">.....<span class="chat-timestamp">11:33</span></p>
             <p class="chat-message" id="tit">html essential<span class="chat-timestamp">11:33</span></p>
@@ -183,7 +198,8 @@
             </p>
             <p class="chat-message" id="tit">css essential <span class="chat-timestamp">11:33</span></p>
             <p class="chat-message sent"><img src="css.jpg" alt="" id="cimg"><br>
-                <a href="https://www.linkedin.com/learning/certificates/986f178d0b50827b4b4c0ac05e5c04fbdc12273b2ff1175b84b1819f3ea36e58?trk=share_certificate">view
+                <a
+                    href="https://www.linkedin.com/learning/certificates/986f178d0b50827b4b4c0ac05e5c04fbdc12273b2ff1175b84b1819f3ea36e58?trk=share_certificate">view
                     certificate</a>
                 <span class="chat-timestamp">11:33</span>
             </p>
@@ -196,7 +212,7 @@
             <p class="chat-message sent">This is a message <span class="chat-timestamp">11:33</span></p>
         </div>
 
-        <div id="message-content4">
+        <div id="message-content4" class="msgbox">
             <p class="chat-message" id="chead">CONTACTS :~<span class="chat-timestamp">11:33</span></p>
             <p class="chat-message sent" id="tit">.....</p>
             <p class="chat-message" id="tit">contact via mail/phn:<span class="chat-timestamp">11:33</span></p>
@@ -207,21 +223,32 @@
                     <a href="https://www.linkedin.com/in/venkatraman31">•Linked IN</a><br><br>
                     <a href="https://github.com/VenkatRaman31">•Github</a><br><br>
                     <a href="https://twitter.com/VenkatRamanS31">•Twitter</a><br><br>
-                    <a href="https://www.instagram.com/_.thatsit/">•Insta</a></b><br><span class="chat-timestamp">11:33</span></p>
+                    <a href="https://www.instagram.com/_.thatsit/">•Insta</a></b><br><span
+                    class="chat-timestamp">11:33</span></p>
             <p class="chat-message">This is a message <span class="chat-timestamp">11:33</span></p>
             <p class="chat-message sent">This is a message <span class="chat-timestamp">11:33</span></p>
-            </div>
+        </div>
 
     </div>
     <script>
-        alert("open in desktop view for better experience");
-        function sh1() {
-            let btn = document.getElementById('btn');
-            let ddiv = document.getElementById('message-content1');
+        //alert("open in desktop view for better experience");
+        let nnav = document.getElementById("navhid");
+        let menu = document.getElementById("menu");
+
+        let btn = document.getElementById('btn');
             let mc1 = document.getElementById('message-content1');
             let mc2 = document.getElementById('message-content2');
             let mc3 = document.getElementById('message-content3');
             let mc4 = document.getElementById('message-content4');
+
+        nnav.onclick = function () {
+            nnav.classList.toggle("active");
+            menu.classList.toggle("active");
+        }
+
+
+        function sh1() {
+            menu.classList.toggle("active");
             if (mc2.style.display = 'none') {
                 mc2.style.display = 'none';
             }
@@ -241,11 +268,7 @@
             }
         }
         function sh2() {
-            let btn = document.getElementById('btn');
-            let mc1 = document.getElementById('message-content1');
-            let mc2 = document.getElementById('message-content2');
-            let mc3 = document.getElementById('message-content3');
-            let mc4 = document.getElementById('message-content4');
+            menu.classList.toggle("active");
             if (mc1.style.display != 'none') {
                 mc1.style.display = 'none';
             }
@@ -262,11 +285,7 @@
 
         }
         function sh3() {
-            let btn = document.getElementById('btn');
-            let mc1 = document.getElementById('message-content1');
-            let mc2 = document.getElementById('message-content2');
-            let mc3 = document.getElementById('message-content3');
-            let mc4 = document.getElementById('message-content4');
+            menu.classList.toggle("active");
             if (mc1.style.display != 'none') {
                 mc1.style.display = 'none';
             }
@@ -283,11 +302,8 @@
         }
 
         function sh4() {
-            let btn = document.getElementById('btn');
-            let mc1 = document.getElementById('message-content1');
-            let mc2 = document.getElementById('message-content2');
-            let mc3 = document.getElementById('message-content3');
-            let mc4 = document.getElementById('message-content4');
+            menu.classList.toggle("active");
+
             if (mc1.style.display != 'none') {
                 mc1.style.display = 'none';
             }
@@ -302,6 +318,8 @@
                 mc4.style.display = 'block';
             }
         }
+
     </script>
 </body>
+
 </html>
