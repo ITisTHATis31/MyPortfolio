@@ -48,13 +48,53 @@
     height: calc(100vh - 115px);
     overflow-y: scroll;
 } */
+.sidebar{
+    height: 100vh;
+    /* width:calc(100vh -    120px); */
+}
+
+@media only screen and (max-width: 750px) {
+    /* .sidebar{
+        display: none;
+    } */
+    .chat-right-header img{
+        display: none;
+    }
+    .chat-left-header img{
+        opacity: 1;
+        overflow: hidden;
+    }
+    #menu {
+        position: fixed;
+    
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+         
+    }
+    .active#menu
+    {
+        left:-100vw;
+        background-color: aliceblue;
+    }
+    /* .sidebar-chat{
+        background-color: white;
+    } */
+    .msgbox{
+        margin: 0px;
+        padding: 0px;
+    }
+}
 .sidebar-chat{
     position: relative;
     display: flex;
+    /* flex-shrink: 4; */
     align-items: center;
     justify-content: flex-start;
     padding: 10px 12px;
     width: 100%;
+    /* background-color: ; */
 }
 a{
     text-decoration: none;
@@ -100,6 +140,7 @@ body{
 .sidebar{
     flex: 4.5;
 }
+
 .header{
     background-color: #ededed;
     display: flex;
@@ -148,14 +189,46 @@ body{
     font-size: 13px;
     color: grey;
 }
-
 .chat-right-header img{
     width: 20px;
     height: 20px;
     margin: 5px 13px;
     opacity: 0.4;
 }
+.chat-left-header img{
+    width: 20px;
+    height: 20px;
+    margin: 5px 13px;
+    opacity: 0.4;
+}
+
+.chat-right-header{
+    display: flex;
+}
+.chat-left-header{
+    display: flex;
+}
+
+#navhid img{
+    height: 30px;
+    width: 30px;
+    margin-top: 1px;
+    opacity: 0.8;
+}
+
+ @media only screen and (min-width: 750px) {
+    #navhid{
+        display: none;
+    }
+}
+
 /* ...................................................................... */
+
+/* @media (max-width: ) {
+    .container{
+        padding: 0;
+        overflow-x: hidden;
+    } */
 
 #message-content1{
     /* display: none; */
@@ -164,6 +237,7 @@ body{
     height: calc(100vh -    120px);
     padding: 25px 70px;
     overflow-y: scroll;
+    
 }
 #message-content2{
     display: none;
@@ -243,3 +317,24 @@ body{
 #cimg:hover{
     transform: scale(2);
 }
+
+@media only screen and (max-width: 750px) {
+    #message-content1{
+        padding: 12px 15px;
+        height: calc(100vh -    0px);
+    }
+    #message-content2{
+        padding: 12px 15px;
+        height: calc(100vh -    0px);
+    }
+    #message-content3{
+        padding: 12px 15px;
+        height: calc(100vh -    0px);
+    }
+    #message-content4{
+        padding: 12px 15px;
+        height: calc(100vh -    0px);
+    }
+}
+
+
